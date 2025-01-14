@@ -53,37 +53,6 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }
 
-/* Center the About Section */
-#about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  text-align: center; /* Center text inside */
-}
-
-/* Adjust font size and layout */
-#about h1 {
-  font-size: 3.5rem; /* Make the main headings larger */
-}
-
-/* Make the About text and other content larger */
-.about-text {
-  font-size: 1.5rem; /* Increase the font size of the paragraph */
-  line-height: 1.8;  /* Increase line height for readability */
-  margin-bottom: 30px; /* Add space below the paragraph */
-}
-
-/* Make the buttons larger */
-.btn {
-  font-size: 1.25rem; /* Increase the font size of the buttons */
-  padding: 12px 25px; /* Increase padding for larger buttons */
-}
-
-/* Optional: Adjust the spacing between items in the row */
-.row.mb-3 {
-  margin-bottom: 40px;
-}
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;

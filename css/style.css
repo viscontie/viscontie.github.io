@@ -50,6 +50,15 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Make all portfolio images the same height */
+.portfolio-item img {
+  height: 250px;       /* adjust height as needed */
+  width: 100%;         /* ensures full column width */
+  object-fit: cover;   /* crops while keeping proportions */
+  border-radius: 0.5rem; /* keeps rounded corners like before */
+}
+
+
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
 }

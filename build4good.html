@@ -22,6 +22,33 @@
 
   <!-- Customized Bootstrap Stylesheet -->
   <link href="css/style.css" rel="stylesheet">
+
+  <!-- Custom Styling -->
+  <style>
+    .bold-link {
+      font-weight: bold;
+      text-decoration: underline;
+      color: #007bff; /* matches bootstrap primary */
+    }
+
+    .future-impact .col-md-6 {
+      padding: 20px;
+    }
+
+    .section-title {
+      margin-bottom: 15px;
+    }
+
+    .lead {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .list-group-item {
+      border: none;
+      padding-left: 0;
+    }
+  </style>
 </head>
 
 <body>
@@ -51,45 +78,40 @@
       </div>
 
       <!-- Outcome Section -->
-<div class="container my-5">
-  <div class="row align-items-center">
-    <!-- Left Column: Project Outcome -->
-    <div class="col-lg-6 mb-4 mb-lg-0">
-      <h2 class="section-title text-primary fw-bold">Project Outcome</h2>
-      <p class="lead fw-semibold">
-        Dashboard and protocol that measures narrative change through analyzing
-        and visualizing social media exports and state reported data, sentiment
-        analysis of social media engagement, and thematic trend analysis using NLP tools.
-      </p>
-    </div>
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="section-title text-primary fw-bold">Project Outcome</h2>
+          <p class="lead fw-semibold">
+            Dashboard and protocol that measures narrative change through analyzing
+            and visualizing social media exports and state reported data, sentiment
+            analysis of social media engagement, and thematic trend analysis using NLP tools.
+          </p>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img src="web.png" class="img-fluid rounded shadow" alt="Dashboard visualization">
+        </div>
+      </div>
 
-    <!-- Right Column: Image -->
-    <div class="col-lg-6 text-center">
-      <img src="web.png" class="img-fluid rounded shadow" alt="Dashboard visualization">
-    </div>
-  </div>
+      <!-- Future Use + Impact -->
+      <div class="row future-impact mb-5">
+        <div class="col-md-6">
+          <h2 class="section-title text-primary fw-bold">Future Use</h2>
+          <p>
+            Built a protocol for updating the data every 6 months so that with each new
+            batch of social media exports, STEM Next can upload new CSV files to autogenerate
+            new analyses and graphs and track narrative change over years.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <h2 class="section-title text-primary fw-bold">Impact</h2>
+          <p>
+            Created a system for tracking narrative change at STEM Next and helped them
+            demonstrate progress toward their goal of reaching 1.5 million kids.
+          </p>
+        </div>
+      </div>
 
- <!-- Future Use + Impact (side by side) -->
-<div class="row future-impact">
-  <div>
-    <h2 class="section-title text-primary fw-bold">Future Use</h2>
-    <p>
-      Built a protocol for updating the data every 6 months so that with each new
-      batch of social media exports, STEM Next can upload new CSV files to autogenerate
-      new analyses and graphs and track narrative change over years.
-    </p>
-  </div>
-  <div>
-    <h2 class="section-title text-primary fw-bold">Impact</h2>
-    <p>
-      Created a system for tracking narrative change at STEM Next and helped them
-      demonstrate progress toward their goal of reaching 1.5 million kids.
-    </p>
-  </div>
-</div>
-
-
-      <!-- Deliverables Section -->
+      <!-- Deliverables -->
       <div class="row mb-5" id="low-fidelity-prototype">
         <div class="col-lg-12">
           <h2 class="section-title text-primary fw-bold">Deliverables</h2>
@@ -102,7 +124,7 @@
         </div>
       </div>
 
-      <!-- Skills Section -->
+      <!-- Skills -->
       <div class="row mb-5">
         <div class="col-md-6">
           <h2 class="section-title text-primary fw-bold">Technical Skills</h2>
@@ -137,7 +159,8 @@
         <p class="lead fw-semibold">
           Using NLTK, I wrote a script to automatically code engagement data
           (comments and reposts) on STEM Next posts and group them into larger
-          themes to measure thematic trends over time. Check out my <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">code</span></a>.
+          themes to measure thematic trends over time. Check out my
+          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">code</span></a>.
         </p>
       </div>
       <div class="col-md-6 text-center">
@@ -155,9 +178,10 @@
       <div class="col-md-6">
         <h3 class="fw-bold text-primary mb-3">Sentiment Analysis</h3>
         <p class="lead fw-semibold">
-          Wrote a Python script using the Roberta model to assign sentiment scores (-1 to 1) 
+          Wrote a Python script using the Roberta model to assign sentiment scores (-1 to 1)
           to engagement data. This allows STEM Next to track sentiment trends over time and
-          understand how audience opinions evolve. Check out my <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">code</span></a>.
+          understand how audience opinions evolve. Check out my
+          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">code</span></a>.
         </p>
       </div>
     </div>

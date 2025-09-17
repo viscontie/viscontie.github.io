@@ -28,7 +28,7 @@
     .bold-link {
       font-weight: bold;
       text-decoration: underline;
-      color: #007bff; /* matches bootstrap primary */
+      color: #007bff;
     }
 
     .future-impact .col-md-6 {
@@ -45,8 +45,15 @@
     }
 
     .list-group-item {
-      border: none;
+      border-top: 1px solid #dee2e6;
+      border-left: none;
+      border-right: none;
+      border-bottom: none;
       padding-left: 0;
+    }
+
+    .list-group-item:first-child {
+      border-top: none;
     }
   </style>
 </head>
@@ -54,7 +61,9 @@
 <body>
   <!-- Navbar Start -->
   <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-    <a href="build4good.html" class="navbar-brand ml-lg-3"></a>
+    <a href="index.html" class="navbar-brand ml-lg-3">
+      <h2 class="text-primary fw-bold m-0">Ella Visconti</h2>
+    </a>
     <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -77,7 +86,7 @@
         <h1 class="text-uppercase text-primary">Measuring Narrative Change</h1>
       </div>
 
-      <!-- Outcome Section -->
+      <!-- Project Outcome -->
       <div class="row align-items-center mb-5">
         <div class="col-lg-6 mb-4 mb-lg-0">
           <h2 class="section-title text-primary fw-bold">Project Outcome</h2>
@@ -89,25 +98,6 @@
         </div>
         <div class="col-lg-6 text-center">
           <img src="web.png" class="img-fluid rounded shadow" alt="Dashboard visualization">
-        </div>
-      </div>
-
-      <!-- Future Use + Impact -->
-      <div class="row future-impact mb-5">
-        <div class="col-md-6">
-          <h2 class="section-title text-primary fw-bold">Future Use</h2>
-          <p>
-            Built a protocol for updating the data every 6 months so that with each new
-            batch of social media exports, STEM Next can upload new CSV files to autogenerate
-            new analyses and graphs and track narrative change over years.
-          </p>
-        </div>
-        <div class="col-md-6">
-          <h2 class="section-title text-primary fw-bold">Impact</h2>
-          <p>
-            Created a system for tracking narrative change at STEM Next and helped them
-            demonstrate progress toward their goal of reaching 1.5 million kids.
-          </p>
         </div>
       </div>
 
@@ -123,38 +113,11 @@
           </ul>
         </div>
       </div>
-</div>
-
-<!-- Skills Section -->
-<div class="row mb-5">
-  <div class="col-md-6">
-    <h2 class="section-title text-primary fw-bold">Technical Skills</h2>
-    <ul class="list-group">
-      <li class="list-group-item">NLP (Roberta) for automated thematic analysis</li>
-      <li class="list-group-item">Sentiment Analysis using NLP</li>
-      <li class="list-group-item">Python, Pandas, Matplotlib for data analysis & visualization</li>
-      <li class="list-group-item">Tableau visualizations and dashboard</li>
-      <li class="list-group-item">Website/Dashboard design</li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h2 class="section-title text-primary fw-bold">Soft Skills</h2>
-    <ul class="list-group">
-      <li class="list-group-item">Communicating with a nontechnical audience</li>
-      <li class="list-group-item">Project management</li>
-      <li class="list-group-item">Adaptability: pivoting project due to social media privacy policies</li>
-      <li class="list-group-item">Collaboration with stakeholders</li>
-      <li class="list-group-item">Framing data to tell the story of narrative change</li>
-    </ul>
-  </div>
-</div>
-
-      </div>
     </div>
   </div>
   <!-- Project Section End -->
 
-  <!-- Requirement 1 -->
+  <!-- Requirement 1: Thematic Analysis -->
   <div class="container my-5">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
@@ -163,7 +126,8 @@
           Using NLTK, I wrote a script to automatically code engagement data
           (comments and reposts) on STEM Next posts and group them into larger
           themes to measure thematic trends over time. Check out my code
-          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">here</span></a>.
+          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb"
+            target="_blank"><span class="bold-link">here</span></a>.
         </p>
       </div>
       <div class="col-md-6 text-center">
@@ -172,7 +136,7 @@
     </div>
   </div>
 
-  <!-- Requirement 2 -->
+  <!-- Requirement 2: Sentiment Analysis -->
   <div class="container my-5">
     <div class="row align-items-center">
       <div class="col-md-6 text-center mb-4 mb-md-0">
@@ -184,13 +148,14 @@
           Wrote a Python script using the Roberta model to assign sentiment scores (-1 to 1)
           to engagement data. This allows STEM Next to track sentiment trends over time and
           understand how audience opinions evolve. Check out my code
-          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">here</span></a>.
+          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb"
+            target="_blank"><span class="bold-link">here</span></a>.
         </p>
       </div>
     </div>
   </div>
 
-  <!-- Requirement 3 -->
+  <!-- Requirement 3: Interactive Map -->
   <div class="container my-5">
     <div class="row align-items-center">
       <div class="col-md-6 mb-4 mb-md-0">
@@ -203,6 +168,53 @@
       </div>
       <div class="col-md-6 text-center">
         <img src="map.png" class="img-fluid rounded shadow" alt="Interactive map visualization">
+      </div>
+    </div>
+  </div>
+
+  <!-- Future Use + Impact -->
+  <div class="container my-5">
+    <div class="row future-impact">
+      <div class="col-md-6">
+        <h2 class="section-title text-primary fw-bold">Future Use</h2>
+        <p>
+          Built a protocol for updating the data every 6 months so that with each new
+          batch of social media exports, STEM Next can upload new CSV files to autogenerate
+          new analyses and graphs and track narrative change over years.
+        </p>
+      </div>
+      <div class="col-md-6">
+        <h2 class="section-title text-primary fw-bold">Impact</h2>
+        <p>
+          Created a system for tracking narrative change at STEM Next and helped them
+          demonstrate progress toward their goal of reaching 1.5 million kids.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Skills -->
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="section-title text-primary fw-bold">Technical Skills</h2>
+        <ul class="list-group">
+          <li class="list-group-item">NLP (Roberta) for automated thematic analysis</li>
+          <li class="list-group-item">Sentiment Analysis using NLP</li>
+          <li class="list-group-item">Python, Pandas, Matplotlib for data analysis & visualization</li>
+          <li class="list-group-item">Tableau visualizations and dashboard</li>
+          <li class="list-group-item">Website/Dashboard design</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <h2 class="section-title text-primary fw-bold">Soft Skills</h2>
+        <ul class="list-group">
+          <li class="list-group-item">Communicating with a nontechnical audience</li>
+          <li class="list-group-item">Project management</li>
+          <li class="list-group-item">Adaptability: pivoting project due to social media privacy policies</li>
+          <li class="list-group-item">Collaboration with stakeholders</li>
+          <li class="list-group-item">Framing data to tell the story of narrative change</li>
+        </ul>
       </div>
     </div>
   </div>

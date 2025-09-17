@@ -78,23 +78,6 @@
                     <p>Created a system for tracking narrative change at STEM Next and help them show that they are working towards their goal of reaching 1.5 millions kids </p>
                 </div>
 
-                <div class="container mt-5">
-                    <hr class="mb-4">
-                    <div class="row mt-4">
-                       <!-- Left Column: Figma Embed -->
-                    <div class="col-lg-6">
-                        <iframe 
-                            style="border: 1px solid rgba(0, 0, 0, 0.1);" 
-                            width="100%" 
-                            height="450" 
-                            src="https://embed.figma.com/design/jei5Z0swYiH4brW6rgpDZM/Campus-Care?node-id=0-1&embed-host=share" 
-                            allowfullscreen
-                            aria-label="Embedded Figma design for CampusCare. All screens have a home button in top right and navigation bar at the bottom with the option to choose, resources, fast faqs, or wellness calendar. Screen 1 shows a wellness calendar with the selected date August 17 and events populated below are Time to Meditate, SWA Dog: Maisy, and SEXploration workshop. Screen 2 shows a resource page with a list of different resources
-                            Student Resource Guide: Guide to support resources available to all students. SHAC: counseling services, case managers, urgent on call care. OHP: Light box checkouts, sexual well being, sleep and stress management. OAR: accomodations for students with disabilities. OIL: Support, community building, and programming for students of color. Screen 3 shows a heading Today's Wellness Events with two empty wireframes of placeholder events. Below is the title Quick Links, with an icon for Schedule counseling,
-                            TimelyCare, and Wellness practice. Below is an empty box placeholder. ">
-                        </iframe>
-                    </div>
-
                 
                         <!-- Right Column: Low Fidelity Prototype -->
                         <div class="col-lg-6" id="low-fidelity-prototype">
@@ -139,25 +122,17 @@
     <div class="row mt-4">
         <!-- Left Column -->
         <div class="col-md-6">
-            <h3 class="fw-bold text-primary">Requirement 1: Counseling Options</h3>
-            <p class="lead fw-semibold">Comprehensive list of what counseling services are available, how to access/schedule them, and other relevant information</p>
-            <p>
-                Throughout our interviews, stakeholders voiced a desire for immediate and clear information about the various forms of counseling available on campus and how to access it. Furthermore, many stakeholders were not aware or had wrong information about how to access counseling. Therefore, this prototype:
-            </p>
-            <ul>
-                <li>Lays out the various forms of counseling so that users can click the kind they are interested in learning more about right from opening the app.</li>
-                <li>Responds to misconceptions and questions stakeholders often had in interviews on the Fast FAQs page.</li>
-                <li>Provides users with the scheduling page for counseling at Student Health and Counseling, how to install TimelyCare, how to join mental health collectives, and a list of off-campus counseling services.</li>
-            </ul>
+            <h3 class="fw-bold text-primary">Thematic Analysis</h3>
+            <p class="lead fw-semibold">Using NLTK, I wrote a script to automatic thematic coding of engagement data (comments and reposts) on STEM Next posts and group them into larger themes to measure thematic trends over time</p>
         </div>
 
-        <!-- Right Column: Video Playing Like a GIF -->
+        <!-- Right Column: Embedded Image -->
         <div class="col-md-6 d-flex justify-content-center">
-            <video autoplay loop muted playsinline width="50%" aria-label="GIF demonstrating user clicking on TimelyCare icon on homepage to be directed to TimelyCare question on Fast FAQs page">
-                <source src="Untitled video - Made with Clipchamp.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <img 
+                src="Screenshot (39).png" 
+                width="50%">
         </div>
+
     </div>
 </div>
 
@@ -165,27 +140,17 @@
 <div class="container mt-5">
     <div class="row mt-4">
         <!-- Left Column: Video -->
-        <div class="col-md-6 d-flex justify-content-center">
-            <video autoplay loop muted playsinline width="50%" aria-label="GIF demonstrating user clicking on Fast FAQS in nav bar and then clicking on question How can I get to healthcare appointments off campus to reveal information answering this question.">
-                <source src="Untitled video - Made with Clipchamp (1).mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+         <div class="col-md-6 d-flex justify-content-center">
+            <img 
+                src="Screenshot (40).png" 
+                width="50%">
         </div>
 
         <!-- Right Column -->
         <div class="col-md-6">
-            <h3 class="fw-bold text-primary">Requirement 2: Common Q&As</h3>
-            <p class="lead fw-semibold">List of commonly asked questions and misconceptions with detailed answers below each based on the user-selected question</p>
-            <p>
-                Many students are unaware or have the wrong information about how to access resources like counseling, physical check-out resources, off-campus health and transportation, contacting the dean and case management, etc.
-            </p>
-            <p>
-                During interviews with student and staff stakeholders, it became apparent that many students either lack information about available resources or receive unintentional misinformation from misconceptions of other students. Furthermore, some staff voiced the challenge of getting information out to students. Thus, to combat this, this prototype includes:
-            </p>
-            <ul>
-                <li>A Fast FAQs page that lists the most common questions and misconceptions students have.</li>
-                <li>Users may select a question and receive a comprehensive list of transportation options without having to navigate multiple web pages, bus schedules, or receive wrong information from fellow students.</li>
-            </ul>
+            <h3 class="fw-bold text-primary">Sentiment Analysis</h3>
+            <p class="lead fw-semibold">Wrote a python script that uses Roberta model best suited to this type of engagement data that automatically assigns each engagement data point between -1 and 1 with 0 as neutral. 
+                Allows STEM Next to track the sentiment of engagement data over years, thus tracking how audience opinions and thoughts around STEM Next issues fluxuates over time. </p>
         </div>
     </div>
 </div>
@@ -195,50 +160,19 @@
     <div class="row mt-4">
         <!-- Left Column -->
         <div class="col-md-6">
-            <h3 class="fw-bold text-primary">Requirement 3: Resource Directory</h3>
-            <p class="lead fw-semibold">Comprehensive guide of all mental health and wellness resource options with links to all related organizations at Carleton and Student Wellness Directory</p>
-            <p>
-                To address the fragmented and scattered info about mental health between departments and organizations at Carleton, this prototype allows users to:
-            </p>
-            <ul>
-                <li>Access a list of all organizations on campus that provide mental health and wellness resources.</li>
-                <li>Select the desired organization to view basic information on what resources are provided and how to access them.</li>
-                <li>Get direct links to webpages for all organizations.</li>
-            </ul>
-        </div>
+            <h3 class="fw-bold text-primary">Interactive Map</h3>
+            <p class="lead fw-semibold">To measure growth of Youth, Educators, Demographics, and other catagories relevant to funders and programs I developed an interactive map that allows
+                the user to filter by year, state, and measure, and average. </p>
+           
 
         <!-- Right Column: Video -->
-        <div class="col-md-6 d-flex justify-content-center">
-            <video autoplay loop muted playsinline width="50%" aria-label="GIF demonstrating user clicking on Resources from nav bar to display clickable icons for many mental health organizations and then clicking on calendar icon from navbar to reveal calendar icon with events populating beneath it">
-                <source src="Untitled video - Made with Clipchamp (2).mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+       <div class="col-md-6 d-flex justify-content-center">
+            <img 
+                src="Screenshot (38).png" 
+                width="50%">
         </div>
     </div>
 </div>
-
-    
-   
-
-
-
-<div class="container mt-5">
-    <hr class="mb-4">
-    <h2 class="section-title text-primary fw-bold text-start mt-5 mb-4">UX Evaluation</h2>
-
-    <div class="row mt-4">
-        <!-- Full-Width Introductory Text -->
-        <div class="col-12">
-            <p class="lead fw-semibold">
-                For the UX evaluation stage of the design process, we conducted a mix of focus groups and think-aloud/co-discovery sessions. 
-                This involved encouraging interviewees to walk through their actions, expectations, thoughts, and reactions 
-                as they navigated our prototype. Verbalizing their thought process helped us gain insight into how we 
-                can tweak and tailor our prototypes to be most accessible and useful to our users. During evaluation we asked  
-                interviewees to complete three tasks to observe and record the following UX metrics.
-            </p>
-        </div>
-        
-
 
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">

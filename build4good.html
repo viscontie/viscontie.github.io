@@ -45,179 +45,212 @@
     }
 
     .list-group-item {
-      border-top: 1px solid #dee2e6;
-      border-left: none;
-      border-right: none;
-      border-bottom: none;
+      border: none;
       padding-left: 0;
     }
 
-    .list-group-item:first-child {
-      border-top: none;
+    /* New styling */
+    .section-divider {
+      border-top: 2px solid #dee2e6;
+      margin: 3rem auto;
+      width: 80%;
+    }
+
+    .alt-section {
+      background-color: #f8f9fa;
+      padding: 3rem 0;
+    }
+
+    .card-box {
+      background: #fff;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      padding: 2rem;
+      margin-bottom: 2rem;
     }
   </style>
 </head>
 
 <body>
   <!-- Navbar Start -->
-  <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
-    <a href="index.html" class="navbar-brand ml-lg-3">
-      <h2 class="text-primary fw-bold m-0">Ella Visconti</h2>
-    </a>
-    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
-      <div class="navbar-nav m-auto py-0">
-        <a href="index.html" class="nav-item nav-link active">Home</a>
-        <a href="#low-fidelity-prototype" class="nav-item nav-link">Low Fidelity Prototype</a>
-        <a href="#UX-research-process" class="nav-item nav-link">UX Research Process</a>
-        <a href="#2nd-prototype" class="nav-item nav-link">2nd Prototype</a>
-      </div>
-    </div>
-  </nav>
-  <!-- Navbar End -->
+    <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-lg-5">
+        <a href="index.html" class="navbar-brand ml-lg-3">
+        </a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse px-lg-3" id="navbarCollapse">
+            <div class="navbar-nav m-auto py-0">
+                <a href="#home" class="nav-item nav-link active">Home</a>
+                <a href="#about" class="nav-item nav-link">About</a>
+                <a href="#qualification" class="nav-item nav-link">Experience</a>
+                <a href="#skill" class="nav-item nav-link">Skills</a>
+                <a href="#portfolio" class="nav-item nav-link">Portfolio</a>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar End -->
 
   <!-- Project Section Start -->
   <div class="container-fluid py-5 bg-light" id="service">
     <div class="container">
+
       <!-- Title -->
       <div class="text-center mb-5">
         <h1 class="text-uppercase text-primary">Measuring Narrative Change</h1>
       </div>
 
       <!-- Project Outcome -->
-      <div class="row align-items-center mb-5">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <h2 class="section-title text-primary fw-bold">Project Outcome</h2>
-          <p class="lead fw-semibold">
-            Dashboard and protocol that measures narrative change through analyzing
-            and visualizing social media exports and state reported data, sentiment
-            analysis of social media engagement, and thematic trend analysis using NLP tools.
-          </p>
-        </div>
-        <div class="col-lg-6 text-center">
-          <img src="web.png" class="img-fluid rounded shadow" alt="Dashboard visualization">
+      <div class="card-box">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h2 class="section-title text-primary fw-bold">Project Outcome</h2>
+            <p class="lead fw-semibold">
+              Dashboard and protocol that measures narrative change through analyzing
+              and visualizing social media exports and state reported data, sentiment
+              analysis of social media engagement, and thematic trend analysis using NLP tools.
+            </p>
+          </div>
+          <div class="col-lg-6 text-center">
+            <img src="web.png" class="img-fluid rounded shadow" alt="Dashboard visualization">
+          </div>
         </div>
       </div>
 
-      <!-- Deliverables -->
-      <div class="row mb-5" id="low-fidelity-prototype">
-        <div class="col-lg-12">
-          <h2 class="section-title text-primary fw-bold">Deliverables</h2>
-          <p class="lead fw-semibold">My project included:</p>
-          <ul class="list-group list-group-flush">
-            <li class="list-group-item">Website displaying and contextualizing narrative change data for STEM Next employees, partners, and funders.</li>
-            <li class="list-group-item">Protocol for updating new data files every 6 months to automatically update Tableau visualizations, run sentiment analysis scripts, and thematic coding scripts.</li>
-            <li class="list-group-item">Hour-long presentation on August 20th to STEM Next employees about my findings and the trajectory of measuring narrative change moving forward.</li>
-          </ul>
+      <div class="section-divider"></div>
+
+      <!-- Future Use + Impact -->
+      <div class="alt-section">
+        <div class="container">
+          <div class="row future-impact">
+            <div class="col-md-6 card-box">
+              <h2 class="section-title text-primary fw-bold">Future Use</h2>
+              <p>
+                Built a protocol for updating the data every 6 months so that with each new
+                batch of social media exports, STEM Next can upload new CSV files to autogenerate
+                new analyses and graphs and track narrative change over years.
+              </p>
+            </div>
+            <div class="col-md-6 card-box">
+              <h2 class="section-title text-primary fw-bold">Impact</h2>
+              <p>
+                Created a system for tracking narrative change at STEM Next and helped them
+                demonstrate progress toward their goal of reaching 1.5 million kids.
+              </p>
+            </div>
+          </div>
         </div>
       </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Deliverables -->
+      <div class="card-box" id="low-fidelity-prototype">
+        <h2 class="section-title text-primary fw-bold">Deliverables</h2>
+        <p class="lead fw-semibold">My project included:</p>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Website displaying and contextualizing narrative change data for STEM Next employees, partners, and funders.</li>
+          <li class="list-group-item">Protocol for updating new data files every 6 months to automatically update Tableau visualizations, run sentiment analysis scripts, and thematic coding scripts.</li>
+          <li class="list-group-item">Hour-long presentation on August 20th to STEM Next employees about my findings and the trajectory of measuring narrative change moving forward.</li>
+        </ul>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Skills -->
+      <div class="alt-section">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 card-box">
+              <h2 class="section-title text-primary fw-bold">Technical Skills</h2>
+              <ul class="list-group">
+                <li class="list-group-item">NLP (Roberta) for automated thematic analysis</li>
+                <li class="list-group-item">Sentiment Analysis using NLP</li>
+                <li class="list-group-item">Python, Pandas, Matplotlib for data analysis & visualization</li>
+                <li class="list-group-item">Tableau visualizations and dashboard</li>
+                <li class="list-group-item">Website/Dashboard design</li>
+              </ul>
+            </div>
+            <div class="col-md-6 card-box">
+              <h2 class="section-title text-primary fw-bold">Soft Skills</h2>
+              <ul class="list-group">
+                <li class="list-group-item">Communicating with a nontechnical audience</li>
+                <li class="list-group-item">Project management</li>
+                <li class="list-group-item">Adaptability: pivoting project due to social media privacy policies</li>
+                <li class="list-group-item">Collaboration with stakeholders</li>
+                <li class="list-group-item">Framing data to tell the story of narrative change</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Thematic Analysis -->
+      <div class="card-box">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h3 class="fw-bold text-primary mb-3">Thematic Analysis</h3>
+            <p class="lead fw-semibold">
+              Using NLTK, I wrote a script to automatically code engagement data
+              (comments and reposts) on STEM Next posts and group them into larger
+              themes to measure thematic trends over time. Check out my code
+              <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">here</span></a>.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="themes.png" class="img-fluid rounded shadow" alt="Thematic analysis visualization">
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Sentiment Analysis -->
+      <div class="alt-section">
+        <div class="container">
+          <div class="card-box">
+            <div class="row align-items-center">
+              <div class="col-md-6 text-center mb-4 mb-md-0">
+                <img src="sentiment.png" class="img-fluid rounded shadow" alt="Sentiment analysis visualization">
+              </div>
+              <div class="col-md-6">
+                <h3 class="fw-bold text-primary mb-3">Sentiment Analysis</h3>
+                <p class="lead fw-semibold">
+                  Wrote a Python script using the Roberta model to assign sentiment scores (-1 to 1)
+                  to engagement data. This allows STEM Next to track sentiment trends over time and
+                  understand how audience opinions evolve. Check out my code
+                  <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb" target="_blank"><span class="bold-link">here</span></a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider"></div>
+
+      <!-- Interactive Map -->
+      <div class="card-box">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-4 mb-md-0">
+            <h3 class="fw-bold text-primary mb-3">Interactive Map</h3>
+            <p class="lead fw-semibold">
+              To measure growth of Youth, Educators, Demographics, and other categories relevant
+              to funders and programs, I developed an interactive map that allows the user to
+              filter by year, state, and measure, and view averages.
+            </p>
+          </div>
+          <div class="col-md-6 text-center">
+            <img src="map.png" class="img-fluid rounded shadow" alt="Interactive map visualization">
+          </div>
+        </div>
+      </div>
+
     </div>
   </div>
   <!-- Project Section End -->
-
-  <!-- Requirement 1: Thematic Analysis -->
-  <div class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <h3 class="fw-bold text-primary mb-3">Thematic Analysis</h3>
-        <p class="lead fw-semibold">
-          Using NLTK, I wrote a script to automatically code engagement data
-          (comments and reposts) on STEM Next posts and group them into larger
-          themes to measure thematic trends over time. Check out my code
-          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb"
-            target="_blank"><span class="bold-link">here</span></a>.
-        </p>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="themes.png" class="img-fluid rounded shadow" alt="Thematic analysis visualization">
-      </div>
-    </div>
-  </div>
-
-  <!-- Requirement 2: Sentiment Analysis -->
-  <div class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-6 text-center mb-4 mb-md-0">
-        <img src="sentiment.png" class="img-fluid rounded shadow" alt="Sentiment analysis visualization">
-      </div>
-      <div class="col-md-6">
-        <h3 class="fw-bold text-primary mb-3">Sentiment Analysis</h3>
-        <p class="lead fw-semibold">
-          Wrote a Python script using the Roberta model to assign sentiment scores (-1 to 1)
-          to engagement data. This allows STEM Next to track sentiment trends over time and
-          understand how audience opinions evolve. Check out my code
-          <a href="https://github.com/viscontie/STEM-Next-Internship-Scripts/blob/main/keyword_tracker_and_sentiment_analysis.ipynb"
-            target="_blank"><span class="bold-link">here</span></a>.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Requirement 3: Interactive Map -->
-  <div class="container my-5">
-    <div class="row align-items-center">
-      <div class="col-md-6 mb-4 mb-md-0">
-        <h3 class="fw-bold text-primary mb-3">Interactive Map</h3>
-        <p class="lead fw-semibold">
-          To measure growth of Youth, Educators, Demographics, and other categories relevant
-          to funders and programs, I developed an interactive map that allows the user to
-          filter by year, state, and measure, and view averages.
-        </p>
-      </div>
-      <div class="col-md-6 text-center">
-        <img src="map.png" class="img-fluid rounded shadow" alt="Interactive map visualization">
-      </div>
-    </div>
-  </div>
-
-  <!-- Future Use + Impact -->
-  <div class="container my-5">
-    <div class="row future-impact">
-      <div class="col-md-6">
-        <h2 class="section-title text-primary fw-bold">Future Use</h2>
-        <p>
-          Built a protocol for updating the data every 6 months so that with each new
-          batch of social media exports, STEM Next can upload new CSV files to autogenerate
-          new analyses and graphs and track narrative change over years.
-        </p>
-      </div>
-      <div class="col-md-6">
-        <h2 class="section-title text-primary fw-bold">Impact</h2>
-        <p>
-          Created a system for tracking narrative change at STEM Next and helped them
-          demonstrate progress toward their goal of reaching 1.5 million kids.
-        </p>
-      </div>
-    </div>
-  </div>
-
-  <!-- Skills -->
-  <div class="container my-5">
-    <div class="row">
-      <div class="col-md-6">
-        <h2 class="section-title text-primary fw-bold">Technical Skills</h2>
-        <ul class="list-group">
-          <li class="list-group-item">NLP (Roberta) for automated thematic analysis</li>
-          <li class="list-group-item">Sentiment Analysis using NLP</li>
-          <li class="list-group-item">Python, Pandas, Matplotlib for data analysis & visualization</li>
-          <li class="list-group-item">Tableau visualizations and dashboard</li>
-          <li class="list-group-item">Website/Dashboard design</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <h2 class="section-title text-primary fw-bold">Soft Skills</h2>
-        <ul class="list-group">
-          <li class="list-group-item">Communicating with a nontechnical audience</li>
-          <li class="list-group-item">Project management</li>
-          <li class="list-group-item">Adaptability: pivoting project due to social media privacy policies</li>
-          <li class="list-group-item">Collaboration with stakeholders</li>
-          <li class="list-group-item">Framing data to tell the story of narrative change</li>
-        </ul>
-      </div>
-    </div>
-  </div>
 
   <!-- Footer -->
   <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
